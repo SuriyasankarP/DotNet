@@ -4,10 +4,10 @@
         ViewBag.Title = "Index";
     }
     
-    <h2>Item List</h2>
+    <h2>Item List</h2><br>
     
     <p>
-        @Html.ActionLink("Create New", "Create")
+        <a asp-controller="Home" asp-action="Create" class=" btn btn-sm btn-success"><i class="bi bi-pencil-square"></i>Add</a>&nbsp;
     </p>
     <table class="table">
         <tr>
