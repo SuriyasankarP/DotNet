@@ -14,6 +14,9 @@ namespace DB.Models
         public string ?Item { get; set; }
 
         [Required]
+        public int ?Price { get; set; }
+
+        [Required]
         public string ?Description { get; set; }
     }
 }

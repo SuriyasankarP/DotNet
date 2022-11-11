@@ -6,6 +6,7 @@
     </div>
 
     <form method="post" asp-action="DeleteItem">
+        <input asp-for="Id" hidden />
         <div asp-validation-summary="All"></div>
         <button type="submit" class="btn btn-danger"><i class="bi bi-trash-fill"></i>Delete</button>
         <a asp-controller="Home" asp-action="Index" class="btn btn-secondary ">Back To List</a>

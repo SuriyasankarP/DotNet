@@ -15,6 +15,11 @@
                 <input type="text" class="form-control mb-3" asp-for="Item" placeholder="Enter Item">
                 <span asp-validation-for="Item" class=" alert-danger"></span>
             </div>
+             <div class="form-group col-md-6">
+                <label asp-for="Price">Price</label>
+                <input type="text" class="form-control mb-3" asp-for="Price" placeholder="Price">
+                <span asp-validation-for="Price" class=" alert-danger"></span>
+            </div>
             <div class="form-group col-md-6">
                 <label asp-for="Description">Description</label>
                 <input type="text" class="form-control mb-3" asp-for="Description" placeholder="Enter Description">
@@ -24,7 +29,7 @@
 
         <div style="display: flex; gap:10px;">
             <button type="submit" class="btn btn-primary"><i class="bi bi-file-plus-fill"></i>Save</button><br>
-            <a asp-controller="Home" asp-action="Index" class="btn btn-warning p-2">Back To List</a>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back To List</a>
         </div>
         
     </form>

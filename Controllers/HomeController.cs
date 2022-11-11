@@ -83,8 +83,6 @@ namespace DB.Controllers
             return View(empfromdb);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult DeleteItem(int? id)
         {
             var deleterecord = _context.list.Find(id);
